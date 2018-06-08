@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimary"
+	tools:context=".SelectCountryActivity">
+
+	<LinearLayout
+		android:id="@+id/heading"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="36dp"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<TextView
+			style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/select_country"
+			android:textColor="@color/offwhite"/>
+
+		<TextView
+			style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:text="@string/reason_to_select"
+			android:textColor="@color/offwhite"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:layout_marginTop="100dp"
+		android:layout_below="@id/heading">
+
+		<ImageView
+			android:id="@+id/country_image"
+			android:layout_height="@dimen/flag_size"
+			android:layout_width="@dimen/flag_size"
+			android:layout_marginBottom="36dp"
+			android:layout_marginTop="36dp"
+			android:foreground="@drawable/circle"
+			android:src="@drawable/united_states_of_america"/>
+
+		<TextView
+			style="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+			android:id="@+id/country_name"
+			android:layout_width="wrap_content"
+			android:textColor="@color/offwhite"
+			android:text="@string/usa"
+			android:drawableEnd="@drawable/ic_arrow_down"
+			android:drawablePadding="6dp"
+			android:elevation="8dp"
+			android:drawableTint="@color/offwhite"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:onClick="onClickCountry"/>
+	</LinearLayout>
+	<Button
+		android:id="@+id/next_button"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="@color/offwhite"
+		android:textColor="@color/colorPrimary"
+		android:onClick="onClickNext"
+		android:text="@string/next"/>
+</RelativeLayout>
