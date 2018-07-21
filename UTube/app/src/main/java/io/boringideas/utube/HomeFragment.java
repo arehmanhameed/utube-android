@@ -38,7 +38,7 @@ public class HomeFragment extends Fragment {
                 showActivity(HomeContentActivity.class, "TRENDING");
                 break;
             case R.id.recommended:
-                showActivity(HomeContentActivity.class, "RECOMMENDED ");
+                showActivity(HomeContentActivity.class, "RECOMMENDED");
                 break;
         }
     }
