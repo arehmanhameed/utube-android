@@ -5,13 +5,70 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	app:layout_constraintBottom_toTopOf="parent"
 	tools:context=".MainActivity">
 
 	<FrameLayout
 		android:id="@+id/content"
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
+		app:layout_constraintBottom_toTopOf="@+id/navigation"
+		app:layout_constraintTop_toTopOf="parent"
 		android:layout_weight="1"/>
+
+	<!--<FrameLayout-->
+	<!--android:id="@+id/controlPanel"-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_alignParentBottom="true"-->
+
+	<!--android:background="@color/colorPrimaryDark"-->
+	<!--app:layout_constraintBottom_toTopOf="@+id/navigation">-->
+
+	<!--<LinearLayout-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content">-->
+
+	<!--<TextView-->
+	<!--android:id="@+id/title"-->
+	<!--android:layout_width="0dp"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_marginEnd="12dp"-->
+	<!--android:layout_weight="5"-->
+	<!--android:maxLines="2"-->
+	<!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+	<!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+	<!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+	<!--android:paddingTop="@dimen/activity_vertical_margin"-->
+	<!--android:text="Song Tile"-->
+	<!--android:textAlignment="center"-->
+	<!--android:textColor="@android:color/white"/>-->
+
+	<!--<ImageView-->
+	<!--android:id="@+id/playPause"-->
+	<!--android:layout_width="0dp"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_weight="1"-->
+	<!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+	<!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+	<!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+	<!--android:paddingTop="@dimen/activity_vertical_margin"-->
+	<!--android:src="@drawable/ic_play"-->
+	<!--android:tint="@android:color/white"/>-->
+
+	<!--<ImageView-->
+	<!--android:id="@+id/close"-->
+	<!--android:layout_width="0dp"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_weight="1"-->
+	<!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+	<!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+	<!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+	<!--android:paddingTop="@dimen/activity_vertical_margin"-->
+	<!--android:src="@drawable/ic_close"-->
+	<!--android:tint="@android:color/white"/>-->
+	<!--</LinearLayout>-->
+	<!--</FrameLayout>-->
 
 	<android.support.design.widget.BottomNavigationView
 		android:id="@+id/navigation"
@@ -19,6 +76,7 @@
 		android:layout_height="wrap_content"
 		android:layout_marginEnd="0dp"
 		android:layout_marginStart="0dp"
+		android:visibility="gone"
 		android:background="?android:attr/windowBackground"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintLeft_toLeftOf="parent"
