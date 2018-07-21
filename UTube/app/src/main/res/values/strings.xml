@@ -205,4 +205,5 @@
 	<string name="top_100">TOP 100</string>
 	<string name="trending">TRENDING</string>
 	<string name="recommended">RECOMMENDED</string>
+	<string name="failed_playback">Playback Failed</string>
 </resources>
