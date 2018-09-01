@@ -42,7 +42,7 @@ public class HomeContentActivity extends AppCompatActivity {
 
     // Your developer key goes here
     public static final String KEY
-            = "AIzaSyCLzuccgmUlLYl9OfTBarme5edotixWijU";
+            = "YOUR API KEY";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -21,7 +21,7 @@ public class YoutubeUtils {
     private YouTube youtube;
     private YouTube.Search.List searchQuery;
     private YouTube.Videos.List videoQuery;
-    public static final String KEY = "AIzaSyCLzuccgmUlLYl9OfTBarme5edotixWijU";
+    public static final String KEY = "YOUR API KEY";
     private ArrayList<Videos> videosList;
 
     public ArrayList<Videos> getVideos(String query){
